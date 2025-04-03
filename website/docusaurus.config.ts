@@ -157,12 +157,13 @@ export default async function createConfigAsync() {
   return {
     title: 'Docusaurus',
     tagline: getLocalizedConfigValue('tagline'),
-    organizationName: 'facebook',
-    projectName: 'docusaurus',
-    baseUrl,
+    organizationName: 'syh-alibaba',
+    projectName: 'syh',
+    baseUrl: '/',
     baseUrlIssueBanner: true,
-    url: 'https://docusaurus.io',
-    future: {
+    url: 'https://syh.github.io',
+    trailingSlash: false,
+  future: {
       v4: !isSlower, // Not accurate, but good enough
       experimental_faster: !isSlower,
       experimental_storage: {
